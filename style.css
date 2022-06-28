@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+body{
+   
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    width: 25%;
+   
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 20px;
+    box-shadow: var(--Very-dark-blue-line);
+    cursor: pointer;
+}
+
+.main_img img{  
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+
+
+.main_img{
+    text-align: center;
+}
+
+ 
+
+.main_img:hover .image {
+    
+    background: var(--Cyan);
+    opacity: 0.6; 
+    
+  }
+
+ .content_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+h3{
+    color: var(--White);
+}
+
+h3:hover{
+    color: var(--Cyan);
+}
+
+p{
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
+
+.eth{
+    color: var(--Cyan);
+}
+
+span{
+    color: var(--White);
+}
+
+span:hover{
+    color: var(--Cyan);
+}
+.avatar img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    
+}
+
+.avatar{
+  
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail_left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.detail_right{
+    display: flex;
+    flex-direction: row;
+}
+
+hr{
+    height: 1px;
+    border-width: 0;
+    color: var(--Soft-blue);
+    background-color: var(--Soft-blue);
+}
+
+/* Media Query */
+
+@media(max-width: 412px){
+
+    main{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1024px){
+
+    main{
+        width: 50%;
+    }
+}
+
+@media(max-width: 414px){
+
+    main{
+        width: 80%;
+    }
+}
