@@ -50,14 +50,30 @@ main{
 
 .main_img{
     text-align: center;
+    position: relative;
 }
 
+.img_overlay {
+   
+    background-color: hsla(178, 100%, 50%,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+     display: none;    
+}
  
+.img_overlay img{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
-.main_img:hover .image {
+.main_img:hover .img_overlay {
     
-    background: var(--Cyan);
-    opacity: 0.6; 
+    display: block;
     
   }
 
@@ -129,6 +145,8 @@ hr{
     color: var(--Soft-blue);
     background-color: var(--Soft-blue);
 }
+
+
 
 /* Media Query */
 
